@@ -1,0 +1,33 @@
+# Secrets — never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+kubeconfig
+.kube/
+credentials
+.aws/
+*.aws
+*.secret
+secrets.yaml
+secret.yaml
+*credentials*
+
+# Local config
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Logs and dumps
+*.log
+auth.log
+*.dump
+*.sql.gz
+
+# Misc
+node_modules/
