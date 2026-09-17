@@ -46,7 +46,9 @@ gh repo create cybex-ops --template sven0219/ops-repo-template --private --clone
 
 For an AI agent (e.g. opencode), the same intent works as a single instruction:
 
-> Create a repo named `xxx-project-ops` from `sven0219/ops-repo-template` (private) and push the template files.
+> Create a repo named `<project>-ops` from `sven0219/ops-repo-template` (private), and push it.
+
+The agent will run the `gh repo create --template` flow automatically. A ready-to-follow procedure is documented in [knowledge/runbooks/create-repo-from-template.md](knowledge/runbooks/create-repo-from-template.md) — any agent or contributor can pick it up and execute it step by step.
 
 ## Rules
 

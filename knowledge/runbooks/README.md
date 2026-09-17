@@ -10,4 +10,4 @@ Executable operational procedure manuals. Each document must state its verificat
 
 ## Runbooks
 
-_None yet._
+- [Create a new project ops repo from template](create-repo-from-template.md) — one-command setup via GitHub CLI / AI agent
