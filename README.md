@@ -26,6 +26,28 @@ A ready-to-use repository template for **troubleshooting, knowledge base and wor
 4. Stable conclusions are distilled into `knowledge/` entries.
 5. Major incidents get a full retrospective under `incidents/`.
 
+### One-Command Setup (GitHub CLI)
+
+Because this template is **public**, anyone can spin up a new project repo in one command:
+
+```bash
+# Create a private project repo from this template
+gh repo create <project>-ops --template sven0219/ops-repo-template --private
+
+# ...or a public one, and clone it locally right away
+gh repo create <project>-ops --template sven0219/ops-repo-template --public --clone
+```
+
+Example:
+
+```bash
+gh repo create cybex-ops --template sven0219/ops-repo-template --private --clone
+```
+
+For an AI agent (e.g. opencode), the same intent works as a single instruction:
+
+> Create a repo named `xxx-project-ops` from `sven0219/ops-repo-template` (private) and push the template files.
+
 ## Rules
 
 See [AGENTS.md](AGENTS.md). Core conventions:
