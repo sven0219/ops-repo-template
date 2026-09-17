@@ -10,6 +10,8 @@ A ready-to-use repository template for **troubleshooting, knowledge base and wor
 ├── README.md            # Entry point / navigation
 ├── worklog/             # Daily troubleshooting stream, one file per date
 │   └── YYYY-MM-DD.md
+├── troubleshooting/     # Distilled troubleshooting cases with root cause
+│   └── YYYY-MM-DD-<slug>.md
 ├── knowledge/           # Reusable knowledge: environment facts, runbooks, references
 │   ├── _template.md     # Template for new knowledge entries
 │   ├── runbooks/        # Executable operational procedures
@@ -23,8 +25,9 @@ A ready-to-use repository template for **troubleshooting, knowledge base and wor
 1. Click **Use this template** on GitHub to create a new repository, or copy the files into your project.
 2. Update this README to describe your project.
 3. Start troubleshooting. Each investigation is recorded in `worklog/YYYY-MM-DD.md`.
-4. Stable conclusions are distilled into `knowledge/` entries.
-5. Major incidents get a full retrospective under `incidents/`.
+4. Resolved cases are distilled into `troubleshooting/` write-ups with root cause.
+5. Stable conclusions are distilled into `knowledge/` entries.
+6. Major incidents get a full retrospective under `incidents/`.
 
 ### One-Command Setup (GitHub CLI)
 

@@ -10,6 +10,8 @@ This repository is a **troubleshooting, knowledge base and worklog** repository 
 ├── README.md            # Entry point navigation
 ├── worklog/             # Daily troubleshooting stream, by date
 │   └── YYYY-MM-DD.md
+├── troubleshooting/     # Distilled troubleshooting cases with root cause
+│   └── YYYY-MM-DD-<slug>.md
 ├── knowledge/           # Reusable knowledge: environment facts, access, runbooks, references
 │   ├── _template.md     # Template for new entries
 │   ├── runbooks/        # Executable operational procedures
@@ -35,6 +37,14 @@ This repository is a **troubleshooting, knowledge base and worklog** repository 
 4. Put executable operational steps in `knowledge/runbooks/`; put external links in `knowledge/reference/`.
 5. Entries link back to the corresponding worklog record via relative Markdown links.
 6. Entries marked `UNVERIFIED` are drafts and do not represent verified state.
+
+## Troubleshooting Rules
+
+1. After resolving an investigation, **automatically** evaluate whether to write a distilled case document in `troubleshooting/YYYY-MM-DD-<slug>.md`.
+2. Copy `troubleshooting/_template.md`; include symptom, investigation, root cause, resolution, and lessons learned.
+3. Link each case back to the raw process in `worklog/YYYY-MM-DD.md`.
+4. If the case yields a stable, reusable conclusion, also create a `knowledge/` entry.
+5. Use `troubleshooting/` for distilled case write-ups; use `incidents/` for major incidents affecting production/customers.
 
 ## Incidents Rules
 
